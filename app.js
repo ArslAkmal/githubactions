@@ -12,6 +12,10 @@ app.get("/home",(req,res)=>{
     res.json({message:"Hello From Home"})
 })
 
+app.get("/test",(req,res)=>{
+    res.json({message:"Hello From Test"})
+})
+
 
 app.listen(PORT,()=>{
     console.log(`Server is running on port ${PORT}`);
