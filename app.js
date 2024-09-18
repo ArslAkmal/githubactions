@@ -15,6 +15,9 @@ app.get("/home",(req,res)=>{
 app.get("/test",(req,res)=>{
     res.json({message:"Hello From Test"})
 })
+app.get("/abc",(req,res)=>{
+    res.json({message:"Hello From Abc"})
+})
 
 
 app.listen(PORT,()=>{
