@@ -8,6 +8,11 @@ app.get("/",(req,res)=>{
 })
 
 
+app.get("/home",(req,res)=>{
+    res.json({message:"Hello From Home"})
+})
+
+
 app.listen(PORT,()=>{
     console.log(`Server is running on port ${PORT}`);
     
