@@ -24,8 +24,12 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-
-    - run: npm ci
+        
+    # Install dependencies for the frontend (React app)
+    - name: Install frontend dependencies
+      run: |
+        cd frontend
+        npm ci
 
     # Run the React build process
     - name: Build React App
