@@ -35,6 +35,7 @@ jobs:
     - name: Build React App
       run: |
         cd frontend
+        npm ci
         npm run build
 
     # Restart the app using pm2
